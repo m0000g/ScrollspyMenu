@@ -1,23 +1,29 @@
 .scrollspymenu{
+	position: fixed;
+	right: 0;
+}
+
+.scrollspymenu nav ul{
 	background-color: lightgrey;
 	padding-left: 0;
 	list-style:none;
+	background-color: #f8f8f8;
+	border-color: #e7e7e7;	
 }
 
-.scrollspymenu li a{
-	background-color: #e7e7e7;
+.scrollspymenu nav ul li a{	
+	color: #777;
 	display: block;	
 	padding: 10px 15px;
 	line-height: 20px;
 	text-decoration: none;
 }
 
-.scrollspymenu  li a:hover{
-	color: #555;
-	background-color: lightgray;
+.scrollspymenu nav ul li a:hover{
+	color: #333;	
 }
 
-.scrollspymenu li.active a{
-	color: #555;
+.scrollspymenu nav ul li.active a{
+	color: #333;
 	background-color: lightgray;
 }
