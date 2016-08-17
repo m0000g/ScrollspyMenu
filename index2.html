@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scrollspy sample</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" href="css/sample.css">
+</head>
+<body>
+
+	<nav class="navigation fixed" id="nav">
+	  <ul>
+	    <li class="blue active"><a href="#page1">Page 1</a></li>
+	    <li class="green"><a href="#page2">Page 2</a></li>
+	    <li class="orange"><a href="#page3">Page 3</a></li>
+	    <li class="yellow"><a href="#page4">Page 4</a></li>
+	  </ul>
+	</nav>
+
+	<div class="page blue top-page" id="page1">
+	  <h1>Page 1</h1>
+	</div>
+
+	<div class="page green" id="page2">
+	  <h1>Page 2</h1>
+	</div>
+
+	<div class="page orange" id="page3">
+	  <h1>Page 3</h1>
+	</div>
+
+	<div class="page yellow" id="page4">
+	  <h1>Page 4</h1>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Scrollspymenu.js -->
+	<script src="js/scrollspy.js"></script>
+
+	<script type="text/javascript">
+	    $("#nav").scrollspy({ offset: -75 });
+	    console.log("hola joe");
+	</script>
+
+</body>
+</html>
