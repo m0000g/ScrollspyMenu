@@ -62,13 +62,28 @@
 				<ul>
 					<li class="active">
 						<a href="#art1">
-							Article#1
-							<span class="progress"></span>
+							<span class="scrollprogress">
+								<span class="scrolltext">Article#1</span>
+							</span>
 						</a>
 					</li>
-					<li><a href="#art2">Article#2</a></li>
-					<li><a href="#art3">Article#3</a></li>
-					<li><a href="#art4">Article#4</a></li>
+					<li><a href="#art2">
+						<span class="scrollprogress">
+							<span class="scrolltext">Article#2</span>
+						</span>
+						</a></li>
+					<li><a href="#art3">
+						<span class="scrollprogress">
+							<span class="scrolltext">Article#3</span>
+						</span>
+						</a>
+					</li>
+					<li><a href="#art4">
+						<span class="scrollprogress">
+							<span class="scrolltext">Article#4</span>
+						</span>
+						</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -83,6 +98,9 @@
 
 	<!-- Scrollspymenu.js -->
 	<script src="js/scrollspy.js"></script>
+
+	<!-- Progress link -->
+	<script src="js/progresslink.js"></script>
 
 	<script type="text/javascript">
 	    $("#nav_scrollspy").scrollspy();

@@ -5,3 +5,7 @@
  * Description: Hack for Twitter bootstrap's, hightlights the progression of the article.
  * Uses bootstrap scrollspy
  */
+
+ $( window ).scroll(function() {
+  console.log("Scroll");
+});

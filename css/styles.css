@@ -7,8 +7,10 @@
 	background-color: lightgrey;
 	padding-left: 0;
 	list-style:none;
-	background-color: #f8f8f8;
-	border-color: #e7e7e7;	
+	background-color: #fff;	
+}
+.scrollspymenu ul li{
+	border-bottom: 1px #e7e7e7 solid;
 }
 
 .scrollspymenu nav ul li a{	
@@ -25,11 +27,15 @@
 
 .scrollspymenu nav ul li.active a{
 	color: #333;
-	background-color: lightgray;
+	background-color: #fff;
 }
 
-.scrollspymenu .progress{
-	background: gray;
-	display: block;
-	width: 100%;
+.active .scrollprogress {
+    background-image: url(../img/bg_gray.png);
+    background-size: 80px 60px;
+	background-repeat: no-repeat;
+    display: block;
+    margin: -10px -14px;
+    padding: 10px 14px;    
+	
 }
