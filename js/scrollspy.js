@@ -178,6 +178,7 @@
 
                                     // Fire our onChange function 
                                     options.onChange(current.element, $(element), position);
+                                    console.log("If we have a link,  pasale on change");
                                 }
 
                                 // Reset the classes on all other link
