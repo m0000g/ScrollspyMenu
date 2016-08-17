@@ -6,28 +6,25 @@
  * Uses bootstrap scrollspy
  */
 var count= 0;
-
- $( window ).scroll(function() {
-  var scroll = $(window).scrollTop();
-  count++;
-  console.log(count);
-  /*$( ".active .scrollprogress" ).css("background-size", count+" 60px");*/
-  
-});
-
-
 var lastScrollTop = 0;
+
 $(window).scroll(function(event){
    var st = $(this).scrollTop();
    if (st > lastScrollTop){
-       // downscroll code
-       
-  	   /*$( ".active .scrollprogress" ).css("background-size", count+" 60px");*/
+       // downscroll code       
+  	     	   
+  	   increse_percent(10);
    } else {
-      // upscroll code
-
+      // upscroll code      
    }
    var scroll = $(window).scrollTop();
    console.log(scroll);
    lastScrollTop = st;
 });
+
+function increse_percent(x)
+{	
+	$('.active .scrollprogress').css({
+	  'background-position':x+'px 60px'
+	});
+}
