@@ -32,7 +32,7 @@
 
 .active .scrollprogress {
     background-image: url(../img/bg_gray.png);
-    background-size: 80px 60px;
+    background-size: 0px 60px;
 	background-repeat: no-repeat;
     display: block;
     margin: -10px -14px;
