@@ -11,9 +11,9 @@ var lastScrollTop = 0;
 $(window).scroll(function(event){
    var st = $(this).scrollTop();
    if (st > lastScrollTop){
-       // downscroll code       
-  	     	   
-  	   increse_percent(10);
+       // downscroll code
+       count++;
+  	   increse_percent(count);
    } else {
       // upscroll code      
    }
@@ -24,7 +24,6 @@ $(window).scroll(function(event){
 
 function increse_percent(x)
 {	
-	$('.active .scrollprogress').css({
-	  'background-position':x+'px 60px'
-	});
+	console.log(x);
+	$('.active .scrollprogress').css({'background-position':x+'px 60px'});	
 }
